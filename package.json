@@ -1,0 +1,17 @@
+{
+  "name": "giftsite",
+  "version": "1.0.0",
+  "description": "A gift website for kids",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chika Kanu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "nedb": "^1.8.0",
+    "nodemon": "^1.19.4"
+  }
+}
