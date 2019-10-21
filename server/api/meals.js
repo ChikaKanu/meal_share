@@ -1,8 +1,8 @@
-import app from "express";
-const server = require("http").Server(app);
-const bodyParser = require("body-parser");
-const Datastore = require("nedb");
-const async = require("async");
+var app = require("express")();
+var server = require("http").Server(app);
+var bodyParser = require("body-parser");
+var Datastore = require("nedb");
+var async = require("async");
 
 app.use(bodyParser.json());
 module.exports = app;
@@ -81,15 +81,3 @@ app.decrementMeals = function(meals){
         )
     }))
 }
-
-
-
-
-
-
-
-
-
-
-
-

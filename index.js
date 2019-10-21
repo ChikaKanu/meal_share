@@ -1,4 +1,4 @@
-const express = require("express"),
+var express = require("express"),
   http = require("http"),
   port = 80,
   app = require("express")(),
@@ -33,8 +33,8 @@ app.get("/", function(req, res) {
   res.send(" Real time POS web app running.");
 });
 
-app.use("/api/inventory", require("./api/meals"));
-app.use("/api", require("./api/transactions"));
+app.use("/api/meals", require("./server/api/meals"));
+app.use("/api", require("./server/api/transactions"));
 
 // Websocket logic for Live Cart
 io.on("connection", function(socket) {
