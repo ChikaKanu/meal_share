@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const Header = () => {
+    return(
     <div className='text-center'>
         <h1>
             <a href="/#/">Intellisavers</a>
@@ -9,7 +10,7 @@ const Header = () => {
 
         <ul className="nav-menu">
             <li className="lead">
-                <Link to="/meals">Meals</Link>
+                <Link to="/inventory">Meals</Link>
             </li>
             <li className="lead">
                 <Link to="/transactions">Transactions</Link>
@@ -19,6 +20,7 @@ const Header = () => {
             </li>
         </ul>
     </div>
+    )
 }
 
 export default Header;

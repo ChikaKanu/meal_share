@@ -1,19 +1,21 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
-import Meals from './Meals';
+import Inventory from './Inventory';
 import Pos from './Pos'
-import Transactions from './Transactions';
+import Transaction from './Transaction';
 import LiveCart from './LiveCart';
 
 const Main = () => {
+    return(
     <main>
         <Switch>
             <Route exact path='/' component={Pos} />
-            <Route path='/transactions' component={Transactions} />
-            <Route path='/meals' component={Meals} />
+            <Route path='/transactions' component={Transaction} />
+            <Route path='/inventory' component={Inventory} />
             <Route path='/livecart' component={LiveCart} />
         </Switch>
     </main>
+    )
 }
 
 export default Main;

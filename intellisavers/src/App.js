@@ -1,13 +1,16 @@
 import React from 'react';
-import Header from './js/components/Header';
-import Main from './js/components/Main';
+import Header from './js/component/Header';
+import Main from './js/component/Main';
 import logo from './logo.svg';
 import './App.css';
 
-const app = () => {
-  <div>
-    <Main />
-  </div>
+const App = () => {
+  return(
+    <div>
+      <Header />
+      <Main />
+    </div>
+  )
 }
 
 export default App;
