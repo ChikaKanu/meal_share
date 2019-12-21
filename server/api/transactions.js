@@ -1,5 +1,5 @@
 var app = require('express')();
-var meals = require('./meals');
+var Inventory = require('./inventory');
 var server = require('http').Server(app)
 var bodyParser = require('body-parser')
 var Datastore = require('nedb')
@@ -101,7 +101,7 @@ app.post('/new', ((req, res)=>{
             res.status(500).send(err)
         } else {
             res.sendStatus(200)
-            meals.decrementMeals(transaction.meal)
+            Inventory.decrementInventory(transaction.meals)
         }
     }))
 
