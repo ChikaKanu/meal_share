@@ -48,26 +48,11 @@ class Inventory extends Component {
         this.handleSnackbar()
       )
       .catch(err => {
-        console.log(err),
-          this.setState({ snackMessage: "Failed to add new Meal. Do try again" }),
+        // console.log(err),
           this.handleSnackbar();
       });
   };
-  handleEditMeal = (editMeal) => {
-    axios
-      .put(HOST + `/api/inventory/meal`, editMeal)
-      .then(response => {
-        this.setState({ snackMessage: "Meal Update Successful!" });
-        this.handleSnackbar();
-        return true;
-      })
-      .catch(err => {
-        console.log(err);
-        this.setState({ snackMessage: "Meal Update Failed! Check Meal & Try Again" }),
-          this.handleSnackbar();
-        return false;
-      });
-  };
+
 
   handleName = e => {
     this.setState({ name: e.target.value });

@@ -10,6 +10,9 @@ const Header = () => {
 
         <ul className="nav-menu">
             <li className="lead">
+                <Link to="/about">About</Link>
+            </li>
+            <li className="lead">
                 <Link to="/inventory">Meals</Link>
             </li>
             <li className="lead">
@@ -19,9 +22,9 @@ const Header = () => {
                 <Link to="/livecart">Cart</Link>
             </li>
             <li className="lead">
-                <Link to="/account">Account</Link>
-
+                <Link to="/login">Login</Link>
             </li>
+
         </ul>
     </div>
     )

@@ -1,4 +1,4 @@
-import Raect, {Component} from "react";
+import React, {Component} from "react";
 
 class Reservation extends Component {
 
